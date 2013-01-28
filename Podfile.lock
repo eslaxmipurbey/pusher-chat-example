@@ -1,0 +1,17 @@
+
+PODS:
+- JSONKit (1.5pre)
+- SocketRocket (0.2.0)
+- libPusher (1.4):
+  - SocketRocket
+
+DEPENDENCIES:
+- JSONKit (~> 1.5pre)
+- libPusher (~> 1.4)
+
+SPEC CHECKSUMS:
+  JSONKit: 3d4708953ea7ae399a49777372d8b060a43ddd27
+  SocketRocket: a0529878e3c4c200196fa3a7e2ac1ef34aa33ffe
+  libPusher: adf3ab022d3781d519c55e2206bbe2cf362fc175
+
+COCOAPODS: 0.16.0

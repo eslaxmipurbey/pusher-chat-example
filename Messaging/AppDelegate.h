@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MessageTableViewController.h"
+#import "NavigationController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

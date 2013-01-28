@@ -21,6 +21,11 @@
 		005CCCCC16A06E0E0071A649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005CCCAD16A06E0D0071A649 /* Foundation.framework */; };
 		005CCCD416A06E0E0071A649 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 005CCCD216A06E0E0071A649 /* InfoPlist.strings */; };
 		005CCCD716A06E0E0071A649 /* MessagingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 005CCCD616A06E0E0071A649 /* MessagingTests.m */; };
+		005CCCE316A06E950071A649 /* FirstLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005CCCE116A06E950071A649 /* FirstLaunchViewController.m */; };
+		005CCCE416A06E950071A649 /* FirstLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005CCCE216A06E950071A649 /* FirstLaunchViewController.xib */; };
+		005CCCEA16A06FA80071A649 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005CCCE916A06FA80071A649 /* MessageTableViewController.m */; };
+		005CCCF016A081520071A649 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005CCCEF16A081520071A649 /* NavigationController.m */; };
+		96131F8E1B484A6F8921B2ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E508C37551454004AAC97220 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		005CCCD316A06E0E0071A649 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		005CCCD516A06E0E0071A649 /* MessagingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagingTests.h; sourceTree = "<group>"; };
 		005CCCD616A06E0E0071A649 /* MessagingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessagingTests.m; sourceTree = "<group>"; };
+		005CCCE016A06E950071A649 /* FirstLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstLaunchViewController.h; sourceTree = "<group>"; };
+		005CCCE116A06E950071A649 /* FirstLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLaunchViewController.m; sourceTree = "<group>"; };
+		005CCCE216A06E950071A649 /* FirstLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstLaunchViewController.xib; sourceTree = "<group>"; };
+		005CCCE816A06FA80071A649 /* MessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewController.h; sourceTree = "<group>"; };
+		005CCCE916A06FA80071A649 /* MessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
+		005CCCEE16A081520071A649 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		005CCCEF16A081520071A649 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		77AAB3A8C33E4A28872EF3CB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E508C37551454004AAC97220 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 				005CCCAC16A06E0D0071A649 /* UIKit.framework in Frameworks */,
 				005CCCAE16A06E0D0071A649 /* Foundation.framework in Frameworks */,
 				005CCCB016A06E0D0071A649 /* CoreGraphics.framework in Frameworks */,
+				96131F8E1B484A6F8921B2ED /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +101,7 @@
 				005CCCCF16A06E0E0071A649 /* MessagingTests */,
 				005CCCAA16A06E0D0071A649 /* Frameworks */,
 				005CCCA916A06E0D0071A649 /* Products */,
+				77AAB3A8C33E4A28872EF3CB /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +121,7 @@
 				005CCCAD16A06E0D0071A649 /* Foundation.framework */,
 				005CCCAF16A06E0D0071A649 /* CoreGraphics.framework */,
 				005CCCC916A06E0E0071A649 /* SenTestingKit.framework */,
+				E508C37551454004AAC97220 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,9 +129,16 @@
 		005CCCB116A06E0D0071A649 /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				005CCCE016A06E950071A649 /* FirstLaunchViewController.h */,
+				005CCCEE16A081520071A649 /* NavigationController.h */,
+				005CCCEF16A081520071A649 /* NavigationController.m */,
+				005CCCE116A06E950071A649 /* FirstLaunchViewController.m */,
+				005CCCE216A06E950071A649 /* FirstLaunchViewController.xib */,
 				005CCCBA16A06E0D0071A649 /* AppDelegate.h */,
 				005CCCBB16A06E0D0071A649 /* AppDelegate.m */,
 				005CCCB216A06E0D0071A649 /* Supporting Files */,
+				005CCCE816A06FA80071A649 /* MessageTableViewController.h */,
+				005CCCE916A06FA80071A649 /* MessageTableViewController.m */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -162,6 +186,7 @@
 				005CCCA416A06E0D0071A649 /* Sources */,
 				005CCCA516A06E0D0071A649 /* Frameworks */,
 				005CCCA616A06E0D0071A649 /* Resources */,
+				7E361F4E847844EBAD63A942 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +252,7 @@
 				005CCCBE16A06E0D0071A649 /* Default.png in Resources */,
 				005CCCC016A06E0D0071A649 /* Default@2x.png in Resources */,
 				005CCCC216A06E0D0071A649 /* Default-568h@2x.png in Resources */,
+				005CCCE416A06E950071A649 /* FirstLaunchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +280,20 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		7E361F4E847844EBAD63A942 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,6 +303,9 @@
 			files = (
 				005CCCB816A06E0D0071A649 /* main.m in Sources */,
 				005CCCBC16A06E0D0071A649 /* AppDelegate.m in Sources */,
+				005CCCE316A06E950071A649 /* FirstLaunchViewController.m in Sources */,
+				005CCCEA16A06FA80071A649 /* MessageTableViewController.m in Sources */,
+				005CCCF016A081520071A649 /* NavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +405,7 @@
 		};
 		005CCCDB16A06E0E0071A649 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77AAB3A8C33E4A28872EF3CB /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Messaging/Messaging-Prefix.pch";
@@ -373,6 +417,7 @@
 		};
 		005CCCDC16A06E0E0071A649 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77AAB3A8C33E4A28872EF3CB /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Messaging/Messaging-Prefix.pch";
@@ -435,6 +480,7 @@
 				005CCCDC16A06E0E0071A649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		005CCCDD16A06E0E0071A649 /* Build configuration list for PBXNativeTarget "MessagingTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +489,7 @@
 				005CCCDF16A06E0E0071A649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

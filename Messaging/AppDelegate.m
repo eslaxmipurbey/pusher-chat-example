@@ -12,9 +12,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    MessageTableViewController *messageController = [[MessageTableViewController alloc] init];
+    NavigationController *navController = [[NavigationController alloc] init];
+    [navController addChildViewController:messageController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }
