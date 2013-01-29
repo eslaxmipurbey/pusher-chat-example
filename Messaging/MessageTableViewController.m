@@ -33,6 +33,7 @@
     [super viewDidLoad];
     self.messages = [[NSMutableArray alloc] init];
     self.client = [PTPusher pusherWithKey:@"d547d01f9e158c812707" delegate:nil];
+    self.client.authorizationURL = [NSURL URLWithString:@"http://localhost:3000/auth"];
     self.client.reconnectAutomatically = YES;
     [self.client connect];
     PTPusherPrivateChannel *channel = [self.client subscribeToPrivateChannelNamed:@"main"];
@@ -90,14 +91,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI);
-    tableView.transform = transform;
     
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.transform = transform;
     cell.textLabel.text = [self.messages objectAtIndex:indexPath.row];
-    cell.textLabel.font = [UIFont systemFontOfSize:10.0];
+    cell.textLabel.font = [UIFont systemFontOfSize:12.0];
 
     return cell;
 }
