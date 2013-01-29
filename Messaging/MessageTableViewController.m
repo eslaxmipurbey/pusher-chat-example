@@ -27,12 +27,13 @@
 {
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.rowHeight = 30;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(openAlert)];
     
     [super viewDidLoad];
     self.messages = [[NSMutableArray alloc] init];
-    self.client = [PTPusher pusherWithKey:@"d547d01f9e158c812707" delegate:nil];
+    self.client = [PTPusher pusherWithKey:@"d547d01f9e158c812707" connectAutomatically:YES];
     self.client.authorizationURL = [NSURL URLWithString:@"http://localhost:3000/auth"];
     self.client.reconnectAutomatically = YES;
     [self.client connect];
@@ -68,11 +69,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 30;
 }
 
 #pragma mark - Table view data source
